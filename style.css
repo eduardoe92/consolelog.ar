@@ -183,16 +183,13 @@ a:active {
 }
 
 #tarjetas {
-    opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
-    margin-top: -750px;
-}
-
-.transicion {
-    visibility: visible;
-    transition: visibility 1s;
-    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 #topeTarjetas {
@@ -202,6 +199,20 @@ a:active {
     cursor: pointer;
 }
 
-#containerTarjetas {
-    display: inline-flex;
+.color-tarjeta {
+    background: #383838 !important;
+}
+
+#cierraTarjetas {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 1224px) {
+    #tarjetas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }

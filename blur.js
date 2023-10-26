@@ -49,19 +49,17 @@ boton.addEventListener("click", () => {
         elemento.style.transition = "1s";
 
     } else {
-        tarjetas.classList.add("transicion");
 
         elemento.classList.add("blur");
         elemento.style.filter = "blur(1.5rem)";
         elemento.style.transition = "1s";
 
-        tarjetas.style.display = "";
-        tarjetas.style.opacity = 1;
-
-        tarjetas.style.transition = "1s";
+        
         tarjetas.style.filter = "blur(0rem)";
         tarjetas.style.transition = "1s";
         tarjetas.style.visibility = "visible";
+        tarjetas.style.opacity = 1;
+        tarjetas.style.transition = "1s";
     }
 
 });
