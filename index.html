@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="elementToBlur" class="blur">
+    <div id="elementToBlur">
         <section class="contenedor">
             <div class="card">
                 <div class="wrapper">
@@ -20,11 +20,7 @@
                 <img src="./consolelog.png" class="logoo" />
             </div>
         </section>
-        <!--
-<section class="slogan">
-INFORMATION ENGINEERS
-</section>
--->
+
         <section id="contacto">
             <div class="card card-icon">
                 <div class="email title">
@@ -43,12 +39,87 @@ INFORMATION ENGINEERS
                             class="fa-brands fa-whatsapp icon-contact"></i></a>
                 </div>
             </div>
+            <div class="card card-icon">
+                <div class="email title">
+                    <a href="#" id="boton"><i
+                            class="fa-solid fa-users icon-contact"></i></a>
+                </div>
+            </div>
         </section>
     </div>
 
-    <button id="boton" class="btn blur"> Prueba </button>
-    <script src="blur.js"></script>
-    <script src="https://kit.fontawesome.com/551adbbef6.js" crossorigin="anonymous"></script>
+
+
+    <div id="tarjetas" class="flex flex-wrap">
+        <div id="topeTarjetas">
+            <div id="cierraTarjetas"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x"
+                    width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                </svg>
+            </div>
+        </div>
+        <div id="containerTarjetas" class="w-full p-4">
+            <div class="w-full md:w-1/2 p-4">
+                <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/consolelog.png"
+                        alt="" width="384">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <blockquote>
+                            <p class="text-lg font-medium text-white">
+                                “Tailwind CSS is the only framework that I've seen scale
+                                on large teams. It's easy to customize, adapts to any design,
+                                and the build size is tiny”
+                            </p>
+                        </blockquote>
+                        <figcaption class="font-medium">
+                            <div class="text-sky-500 dark:text-sky-400">
+                                Sarah Dayan
+                            </div>
+                            <div class="text-slate-700 dark:text-slate-500">
+                                Staff Engineer, Algolia
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="w-full md:w-1/2 p-4">
+                <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/consolelog.png"
+                        alt="" width="384">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <blockquote>
+                            <p class="text-lg font-medium text-white">
+                                “Tailwind CSS is the only framework that I've seen scale
+                                on large teams. It's easy to customize, adapts to any design,
+                                and the build size is tiny”
+                            </p>
+                        </blockquote>
+                        <figcaption class="font-medium">
+                            <div class="text-sky-500 dark:text-sky-400">
+                                Sarah Dayan
+                            </div>
+                            <div class="text-slate-700 dark:text-slate-500">
+                                Staff Engineer, Algolia
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
 </body>
 
+<script src="blur.js"></script>
+<script src="https://kit.fontawesome.com/551adbbef6.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
 </html>
+
+<!--
+<section class="slogan">
+INFORMATION ENGINEERS
+</section>
+-->

@@ -181,3 +181,27 @@ a:active {
         font-size: 25px;
     }
 }
+
+#tarjetas {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+    margin-top: -750px;
+}
+
+.transicion {
+    visibility: visible;
+    transition: visibility 1s;
+    opacity: 1;
+}
+
+#topeTarjetas {
+    position: absolute;
+    left: 96.5%;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#containerTarjetas {
+    display: inline-flex;
+}
