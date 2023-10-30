@@ -139,7 +139,8 @@ a:active {
     position: absolute;
     z-index: -1;
     -webkit-filter: drop-shadow(1px 1px 1px #222);
-    filter: drop-shadow(1px 1px 1px #222)
+    filter: drop-shadow(1px 1px 1px #222);
+    cursor: pointer;
 }
 
 .card:hover .logoo {
@@ -190,6 +191,8 @@ a:active {
     width: 100%;
     height: 100%;
     z-index: 1;
+    filter: blur(1.5rem);
+    transition: blur 2s, visibility 2s;
 }
 
 #topeTarjetas {
@@ -209,10 +212,32 @@ a:active {
     right: 10px;
 }
 
+#tarjetas img {
+    border-radius: 50%;
+    width: 50%;
+    padding: 20px 20px 20px 20px;
+    filter: drop-shadow(0 0 0.55rem rgb(14, 165, 233));
+}
+
 @media (max-width: 1224px) {
     #tarjetas {
         position: absolute;
+        overflow: hidden;
         top: 0;
         left: 0;
+    }
+
+    #tarjetas img {
+        margin-bottom: -25px;
+        margin-top: -18px;
+    }
+
+    #tarjetas blockquote {
+        font-size: 14px;
+    }
+
+    #tarjetas figcaption {
+        margin-top: 0;
+        font-size: 12px;
     }
 }
