@@ -111,25 +111,25 @@ a:active {
 
 .wrapper::after {
     bottom: 0;
-    opacity: 1
+    opacity: 1;
 }
 
 .card:hover .wrapper::before,
 .wrapper::after {
-    opacity: 1
+    opacity: 1;
 }
 
 .card:hover .wrapper::after {
-    height: 120px
+    height: 120px;
 }
 
 .title {
     width: 100%;
-    transition: transform .5s
+    transition: transform .5s;
 }
 
 .card:hover .title {
-    transform: translate3d(0%, -15px, 100px)
+    transform: translate3d(0%, -15px, 100px);
 }
 
 .logoo {
@@ -145,7 +145,7 @@ a:active {
 
 .card:hover .logoo {
     opacity: 1;
-    transform: translate3d(0%, -30%, 100px)
+    transform: translate3d(0%, -30%, 100px);
 }
 
 @media (min-width: 1444px) {
@@ -161,7 +161,7 @@ a:active {
 
     .card:hover .logoo {
         opacity: 1;
-        transform: translate3d(0%, -15%, 100px)
+        transform: translate3d(0%, -15%, 100px);
     }
 }
 
@@ -204,6 +204,7 @@ a:active {
 
 .color-tarjeta {
     background: #383838 !important;
+    filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
 }
 
 #cierraTarjetas {
