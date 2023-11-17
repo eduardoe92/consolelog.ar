@@ -47,3 +47,9 @@ boton.addEventListener("click", () => {
         elemento.style.transition = "1s";
     }
 });
+
+document.getElementById('boton').addEventListener('click', function (event) {
+    event.preventDefault();
+    var tarjetas = document.getElementById('tarjetas');
+    tarjetas.style.display = 'block';
+});
